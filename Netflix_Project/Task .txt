@@ -1,0 +1,75 @@
+Task: Analyze and visualize Netflix’s Movies and TV Shows to analyze the trends in content availability and production over time.
+
+Dataset Source:
+Netflix Movies and TV Shows | Kaggle ->> https://www.kaggle.com/datasets/shivamb/netflix-shows
+
+
+Questions to Answer
+------------------------------------------
+    How many titles are available on Netflix? both Movies and TV shows
+
+    Which countries produce the most content on Netflix?
+
+    What are the most common genres on Netflix?
+
+    How has Netflix content changed over the years (release vs. added date)?
+
+    What is the distribution of content by age rating (e.g., TV-MA, PG, etc.)?
+
+    Who are the most featured directors or actors (extra)?
+
+    How many titles were added each year/month (trend)?
+
+ Visuals to Include
+------------------------------------
+      Total Titles on Netflix (Card)
+
+      Number of Movies vs TV Shows (Donut or Bar Chart)
+
+      Top 10 Countries by Number of Titles (Column Chart or Treemap)
+
+      Most Common Genres (Bar Chart)
+
+     Titles Added per Year (Line or Area Chart – using date_added)
+
+     Titles by Release Year (Column Chart or Histogram)
+
+     Distribution by Age Rating (Stacked Column or Pie Chart)
+
+     Top Directors/Actors (Bar Chart – optional with drill through)
+
+ Slicers (Filters)
+-------------------
+    Type (Movie / TV Show)
+
+    Country
+
+    Release Year
+
+    Rating
+
+    Genre (need to be parsed first)
+
+    Director or Cast (optional for detailed analysis)
+
+ (Cards)
+
+    Total Titles
+
+    Number of Movies
+
+    Number of TV Shows
+
+    Most Frequent Rating
+
+    Most Represented Country
+
+ Power BI Tips
+-----------------
+    Parse the listed_in column into individual genres (use Power Query’s "split by delimiter" and unpivot if needed).
+
+    Convert date_added to proper datetime and extract year/month for trend analysis.
+
+    Normalize country names as multiple countries appear in a single cell.
+
+    Normalize cast names as multiple actors appear in a single cell.
